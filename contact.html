@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="Zeke.html">Zeke</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+<div id=“box”>
+  <title>Contact Form</title>
+  <style>
+    box {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .contact-form {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    .contact-form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="tel"],
+    .contact-form input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .contact-form input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #66bb6a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form input[type="submit"]:hover {
+      background-color: #66bb6a;
+    }
+  </style>
+
+
+
+  <form class="contact-form" action="/submit-form" method="POST">
+    <h2>Contact Me</h2>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="company">Company:</label>
+    <input type="text" id="company" name="company">
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
